@@ -1,0 +1,21 @@
+<acceptance-test-run title="Looking up the definition of &apos;apple&apos;" name="Looking up the definition of &apos;apple&apos;" description="" steps="3" successful="0" failures="0" errors="1" skipped="2" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="112837" timestamp="2016-06-19T15:30:04.525+07:00">
+  <user-story id="lookup-a-definition" name="Lookup a definition" path="src/test/resources/features/consult_dictionary/LookupADefinition.feature"/>
+  <tags>
+    <tag name="Consult dictionary" type="capability"/>
+    <tag name="Consult dictionary/Lookup a definition" type="feature"/>
+  </tags>
+  <test-group name="Given the user is on the Wikionary home page" result="ERROR">
+    <test-step result="ERROR" duration="110340">
+      <description>Is the home page</description>
+      <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.firefox.FirefoxDriver</error>
+      <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.firefox.FirefoxDriver&#xd;
+[com.guru.steps.serenity.EndUserSteps.is_the_home_page(EndUserSteps.java:37), com.guru.steps.DefinitionSteps.givenTheUserIsOnTheWikionaryHomePage(DefinitionSteps.java:17)]</exception>
+    </test-step>
+  </test-group>
+  <test-step result="SKIPPED" duration="3">
+    <description>When the user looks up the definition of the word &apos;apple&apos;</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="1">
+    <description>Then they should see the definition &apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&apos;</description>
+  </test-step>
+</acceptance-test-run>
